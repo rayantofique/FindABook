@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.rayan.findabook.BookScreen">
+
+    <android.support.constraint.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/BookScreenCover"
+            android:layout_width="0dp"
+            android:layout_height="174dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:adjustViewBounds="true"
+            android:cropToPadding="false"
+            android:padding="30dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/BookScreenTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/BookScreenCover"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="BOOK NAME IS LONG"
+            android:background="@android:color/black"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/BookScreenAuthors"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/BookScreenTitle"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="HERE ARE THE AUTHORS"
+            android:paddingTop="2dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/BookScreenYear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/BookScreenAuthors"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="2017"
+            android:background="#3D72A4"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@android:color/white"
+
+            android:gravity="center_horizontal"
+             />
+
+        <TextView
+            android:id="@+id/BookScreenPublisher"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/BookScreenYear"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="Penguin Books"
+            android:paddingTop="2dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/BookScreenDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/BookScreenPublisher"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            tools:text="Designing effective user interfaces that work on multiple Android devices is extremely challenging. This book provides more than 75 patterns that you can use to create versatile user interfaces for both smartphones and tablets, saving countless hours of development time. Patterns cover the most common and yet difficult types of user interactions, and each is supported with richly illustrated, step-by-step instructions"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:background="#3D72A4"
+
+            />
+
+        <Button
+            android:id="@+id/buttonOpenBook"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Go to Google Books page"
+            android:textColor="@android:color/black"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.931"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/BookScreenDescription"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginTop="10dp"
+            />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

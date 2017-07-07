@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/bookCover"
+        android:layout_width="49dp"
+
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:padding="10dp"
+        android:scaleType="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical"
+        android:layout_weight="0.27">
+
+        <TextView
+            android:id="@+id/bookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Book Title"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/authorNames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Author Name"
+            android:paddingTop="10dp"
+            android:textSize="16sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>
